@@ -8,7 +8,7 @@ from sqlalchemy import text
 mcp = FastMCP()
 
 
-URL_DATABASE = 'postgresql://postgres:Amma123@localhost:5432/Data1'
+URL_DATABASE = 'postgresql://postgres:@localhost:5432/Data1'
 
 engine = create_engine(URL_DATABASE)
 
@@ -57,3 +57,4 @@ if __name__ == "__main__":
         transport="http",
         port=8126
     )
+
